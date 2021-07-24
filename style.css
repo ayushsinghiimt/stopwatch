@@ -1,0 +1,104 @@
+.player-img {
+  height: 4rem;
+  width: 4rem;
+}
+.game {
+  max-height: 100vh;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva;
+}
+.team {
+  max-width: 75vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+h1 {
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .team {
+    max-width: 85vw;
+  }
+  .player-img {
+    height: 2rem;
+    width: 2rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
+.cell {
+  height: 100px;
+  width: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+}
+
+.game-table {
+  margin: 0 auto;
+  margin-top: auto;
+  background-color: #ff94cc;
+  max-width: 303px;
+  display: inline;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+body {
+  background-color: #f0d9e7;
+}
+
+.cell-img {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+}
+.turn {
+  margin-top: 10vh;
+}
+.turn h1 {
+  color: rgb(11, 207, 11);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+}
+.playagain {
+  margin: 0 47vw;
+  transform: translate(-50%, -50%);
+  margin-top: 10vh;
+}
+.btn-play-again {
+  background-color: #a239ea;
+  font-family: "Segoe UI", Tahoma, Geneva;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  width: 10rem;
+}
+.btn-play-again:hover {
+  box-shadow: 5px 5px #888888;
+  background-color: #4e077e;
+  transform: scale(1.2);
+}
+.score-1 h1,
+.score-2 h1 {
+  font-size: 3rem;
+}
